@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1F252E;
+            color: white;
+        }
+
+        header {
+            background-color: #1F252E;
+            padding: 1.5rem 8.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #2C3A47;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            color: #00E8F8;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: #00E8F8;
+        }
+
+        .hero {
+            padding: 5rem 8.5rem;
+            text-align: center;
+            background: linear-gradient(to right, #00E8F8 0%, #1F252E 100%);
+            color: #1F252E;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .section-title {
+            color: #00E8F8;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about,
+        .skills,
+        .portfolio,
+        .contact {
+            padding: 4rem 8.5rem;
+            color: #fff;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .skills .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .skill-list span {
+            background: #00E8F8;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            color: #1F252E;
+            font-weight: bold;
+        }
+
+        .portfolio .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .portfolio .project {
+            background-color: #2C3A47;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 232, 248, 0.1);
+            text-align: center;
+        }
+
+        .portfolio .project img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #00E8F8;
+            color: #1F252E;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2C3A47;
+            text-align: center;
+            padding: 1.5rem;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0.5rem;
+                display: inline-block;
+            }
+
+            .about,
+            .skills,
+            .portfolio,
+            .contact,
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Aura</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm FIROZ</h1>
+        <p>Frontend Developer | UI/UX Enthusiast | Lifelong Learner</p>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I'm Aura, a passionate developer who loves creating sleek and responsive web experiences. My journey began with curiosity and turned into a love for clean, efficient, and elegant code.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Bootstrap</span>
+            <span>Git</span>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">My Work</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="C:/Users/DELL/Desktop/pr1.jpeg" alt="Project 1" />
+                <h3>Project One</h3>
+                <p>A responsive landing page built with HTML, CSS, and JS.</p>
+            </div>
+            <div class="project">
+                <img src="C:/Users/DELL/Desktop/img2.jpeg" alt="Project 2" />
+                <h3>Project Two</h3>
+                <p>A portfolio site using React and styled-components.</p>
+            </div>
+            <div class="project">
+                <img src="C:/Users/DELL/Desktop/img3.jpeg" alt="Project 3" />
+                <h3>Project Three</h3>
+                <p>Full-stack CRUD app with Node.js and MongoDB.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aura. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
